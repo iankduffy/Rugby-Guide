@@ -1,0 +1,19 @@
+{
+  "name": "rugby-guide",
+  "version": "1.0.0",
+  "description": "Guide to playing rugby for hunters",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iankduffy/Rugby-Guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iankduffy/Rugby-Guide/issues"
+  },
+  "homepage": "https://github.com/iankduffy/Rugby-Guide#readme"
+}
