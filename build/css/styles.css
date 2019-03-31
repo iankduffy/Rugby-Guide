@@ -11,6 +11,8 @@
   margin: 0;
   margin-inline-end: 0;
   margin-inline-start: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .u-pad-t-sm {
@@ -241,64 +243,96 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container__row--v-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.container--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .col-1 {
   width: 8.33333%;
+  padding: 0 10px;
 }
 
 .col-2 {
   width: 16.66667%;
+  padding: 0 10px;
 }
 
 .col-3 {
   width: 25%;
+  padding: 0 10px;
 }
 
 .col-4 {
   width: 33.33333%;
+  padding: 0 10px;
 }
 
 .col-5 {
   width: 41.66667%;
+  padding: 0 10px;
 }
 
 .col-6 {
   width: 50%;
+  padding: 0 10px;
 }
 
 .col-7 {
   width: 58.33333%;
+  padding: 0 10px;
 }
 
 .col-8 {
   width: 66.66667%;
+  padding: 0 10px;
 }
 
 .col-9 {
   width: 75%;
+  padding: 0 10px;
 }
 
 .col-10 {
   width: 83.33333%;
+  padding: 0 10px;
 }
 
 .col-11 {
   width: 91.66667%;
+  padding: 0 10px;
 }
 
 .col-12 {
   width: 100%;
-}
-
-pre {
-  background-color: #282828;
-  color: #fff;
-  display: block;
+  padding: 0 10px;
 }
 
 body {
-  font-family: roboto, arial;
+  font-family: "Lato", sans-serif;
 }
 
 p {
@@ -307,14 +341,26 @@ p {
 
 h1,
 .h1 {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 56px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 h2,
 .h2 {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+h3,
+.h3 {
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 header {
@@ -329,5 +375,83 @@ header {
 .o-side-nav--item {
   color: #fff;
   text-decoration: none;
+}
+
+.c-screen {
+  min-height: 100vh;
+}
+
+.c-screen-intro {
+  background-image: url("../assets/Hunters-Background.png");
+  background-size: cover;
+  background-position: bottom;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.c-screen-intro:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(69, 30, 100, 0.7);
+  z-index: 1;
+}
+
+.c-screen-intro > div {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.c-screen--pink {
+  background-color: #D7C9E1;
+}
+
+.c-screen--grey {
+  background-color: #EEEEEE;
+}
+
+.c-btn {
+  display: block;
+  padding: 2% 5%;
+  background: #451E64;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+}
+
+.c-btn:hover {
+  background: rgba(69, 30, 100, 0.9);
+}
+
+.c-btn--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-btn--container > .c-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+}
+
+.c-half:nth-of-type(1 + 2) {
+  padding-right: 10px;
+}
+
+.c-half:nth-of-type(2n) {
+  text-align: right;
+  padding-left: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

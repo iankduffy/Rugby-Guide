@@ -1,0 +1,22 @@
+.c-btn {
+  display: block;
+  padding: 2% 5%; 
+  background: $primary-color;
+  color: $white;
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: flex-end;
+  text-align: center;
+  &:hover{
+    background: transparentize($primary-color, 0.1)
+  }
+
+  &--container {
+    display: flex;
+    justify-content: space-between;
+   
+    > .c-btn {
+      flex: 0 1 49%;
+    }
+  }
+}
