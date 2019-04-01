@@ -8,6 +8,7 @@
   align-self: flex-end;
   text-align: center;
   text-transform: uppercase;
+
   &:hover{
     background: transparentize($primary-color, 0.1)
   }
@@ -29,6 +30,9 @@
       > .c-btn {
         flex: 0 1 30%;
         margin: 10px 10px; 
+        @include breakpoint-max(md) {
+          flex: 0 1 45%;
+        }
       }
     }
   }
