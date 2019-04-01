@@ -28,6 +28,11 @@
     }
   }
 
+  &--purple {
+    background-color: $primary-color;
+    color: $white;
+  }
+
   &--pink {
     background-color: $secondary-color;
   }

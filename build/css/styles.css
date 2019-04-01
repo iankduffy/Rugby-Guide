@@ -407,6 +407,11 @@ header {
   color: #fff;
 }
 
+.c-screen--purple {
+  background-color: #451E64;
+  color: #fff;
+}
+
 .c-screen--pink {
   background-color: #D7C9E1;
 }
@@ -417,7 +422,7 @@ header {
 
 .c-btn {
   display: block;
-  padding: 2% 5%;
+  padding: 20px 10px;
   background: #451E64;
   color: #fff;
   border-radius: 50px;
@@ -425,6 +430,7 @@ header {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .c-btn:hover {
@@ -446,6 +452,28 @@ header {
           flex: 0 1 49%;
 }
 
+.c-btn--container--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-btn--container--wrap > .c-btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin: 10px 10px;
+}
+
+.c-half {
+  margin: 5% 0;
+}
+
 .c-half:nth-of-type(1 + 2) {
   padding-right: 10px;
 }
@@ -453,5 +481,9 @@ header {
 .c-half:nth-of-type(2n) {
   text-align: right;
   padding-left: 10px;
+}
+
+.u-t-cen {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

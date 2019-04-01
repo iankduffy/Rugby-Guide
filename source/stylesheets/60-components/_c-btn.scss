@@ -1,12 +1,13 @@
 .c-btn {
   display: block;
-  padding: 2% 5%; 
+  padding: 20px 10px; 
   background: $primary-color;
   color: $white;
   border-radius: 50px;
   cursor: pointer;
   align-self: flex-end;
   text-align: center;
+  text-transform: uppercase;
   &:hover{
     background: transparentize($primary-color, 0.1)
   }
@@ -14,9 +15,21 @@
   &--container {
     display: flex;
     justify-content: space-between;
-   
+  
+
     > .c-btn {
       flex: 0 1 49%;
+    }
+
+    &--wrap {
+      display: flex; 
+      justify-content: center; 
+      flex-wrap: wrap;
+
+      > .c-btn {
+        flex: 0 1 30%;
+        margin: 10px 10px; 
+      }
     }
   }
 }
