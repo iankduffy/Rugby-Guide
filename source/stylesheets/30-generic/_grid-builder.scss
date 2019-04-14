@@ -36,9 +36,9 @@
     padding: 0 20px; 
   }
 
-  $sizes: xs, sm, md, lg; 
+  $sizesmq: xs, sm, md, lg; 
 
-  @each $mq, $size in $sizes {
+  @each $mq, $size in $sizesmq {
     .col-#{$i}\@#{$mq} {
       @include breakpoint-max($mq) {
         width: (100 / ($grid-cols / $i)) * 1%;

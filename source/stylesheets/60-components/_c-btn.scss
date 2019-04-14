@@ -8,6 +8,7 @@
   align-self: flex-end;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   &:hover{
     background: transparentize($primary-color, 0.1)

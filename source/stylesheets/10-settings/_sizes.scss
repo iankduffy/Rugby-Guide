@@ -1,4 +1,5 @@
 $sizes: (
+  0: 0,
   sm: .75rem,
   md: 1.25rem,
   lg: 3rem,
@@ -11,42 +12,3 @@ $direction: (
   b: bottom,
   l: left
 );
-
-@each $key, $size in $sizes {
-  @each $class, $dir in $direction {
-
-    %u-pad-#{$class}-#{$key}, 
-    .u-pad-#{$class}-#{$key} {
-      padding-#{$dir}: $size;
-    }
-
-    %u-mar-#{$class}-#{$key},
-    .u-mar-#{$class}-#{$key} {
-      margin-#{$dir}: $size;
-    }
-  }
-
-  %u-pad-v-#{$key},
-  .u-pad-v-#{$key} {
-    padding-top: $size;
-    padding-bottom: $size;
-  }
-
-  %u-pad-h-#{$key},
-  .u-pad-h-#{$key} {
-    padding-left: $size;
-    padding-right: $size;
-  }
-
-  %u-mar-v-#{$key},
-  .u-mar-v-#{$key} {
-    margin-top: $size;
-    margin-bottom: $size;
-  }
-
-  %u-mar-h-#{$key},
-  .u-mar-h-#{$key} {
-    margin-left: $size;
-    margin-right: $size;
-  }
-}
